@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  background-image: url(images/mobile/image-hero.jpg);
+  @media only screen and (min-width: 768px) {
+    background-image: url(images/desktop/image-hero.jpg);
+  }
+}
+.mobile-nav {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.mobile-nav-link {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  padding-top: 100px;
+  padding-left: 30px;
+  p {
+    font-size: 23px;
+    text-transform: uppercase;
+  }
+  background-color: black;
+}
+.hidden {
+  display: none;
+}
